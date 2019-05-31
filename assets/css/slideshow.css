@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box
+}
+
+/* Slideshow container */
+@media (max-width: 800px) {
+    .slideshow-container {
+        max-width: 1000px;
+        max-height: 500px;
+        min-height: 500px;
+        position: relative;
+        /* margin: auto; */
+        /* padding-top: 100px; */
+        font-family: 'Charm', cursive;
+    }
+
+    .dot {
+        display: none;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 100vw) {
+    .slideshow-container {
+        max-width: 1000px;
+        max-height: 700px;
+        min-height: 700px;
+        position: relative;
+        margin: auto;
+        padding-top: 50px;
+        font-family: 'Charm', cursive;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 30px 2px;
+        background-color: var(--primairy-color);
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+
+    }
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    border-radius: 3px 0 0 3px;
+    left: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: var(--primairy-color);
+    color: var(--light-color);
+    border: none;
+    text-decoration: none;
+    opacity: .9;
+}
+
+/* The dots/bullets/indicators */
+
+.active,
+.dot:hover {
+    background-color: var(--light-color);
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}

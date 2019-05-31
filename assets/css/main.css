@@ -1,9 +1,150 @@
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import "variables.css";
+@import "inputField.css";
+@import "slideshow.css";
+@import "topButton.css";
+@import "typo.css";
+@import "footer.css";
 
-@import url('variables.css');
-@import url('base.css');
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
 
-@import url('components/flex-grid.css');
-@import url('components/buttons.css');
-@import url('components/forms.css');
+@media (max-width: 800px) {
+    .logo {
+        width: 80%;
+        margin-top: 50px;
+        filter: opacity(1);
+    }
 
+    .pimg3 {
+        background-image: url('../images/pexels-photo-262047.jpeg');
+        height: 500px;
+        padding: 0;
+        background-attachment: fixed;
+        position: initial;
+    }
+
+    .section {
+        text-align: center;
+        padding: 50px;
+        max-height: 140px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 100vw) {
+    .logo {
+        width: 40%;
+        margin-top: 50px;
+        filter: opacity(1);
+    }
+
+    .pimg3 {
+        background-image: url('../images/pexels-photo-262047.jpeg');
+        height: 800px;
+        background-attachment: fixed;
+        position: initial;
+    }
+
+    .section {
+        text-align: center;
+        padding: 50px;
+        max-height: 160px;
+    }
+}
+
+
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.pimg1 {
+    background-image: url('../images/restaurant_alexander_hague_646678.jpg');
+    min-height: 100%;
+    text-align: center;
+    filter: opacity(1);
+    justify-content: space-between;
+    background-position-y: 0.7%;
+}
+
+.pimg2 {
+    background-image: url('../images/pexels-photo-370984.jpeg');
+    min-height: 400px;
+    background-attachment: fixed;
+}
+
+
+
+.pimg4 {
+    background-image: url('../images/food_restaurant_eat_snack.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+.pimg5 {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    background-image: url(../images/restaurant-love-romantic-dinner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.section-light {
+    background-color: var(--light-color);
+    color: var(--gray-color);
+}
+
+.section-dark {
+    background-color: var(--dark-color);
+    color: #ddd;
+}
+
+.ptext .border {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    padding: 20px;
+}
+
+.ptext .border .trans {
+    background-color: transparent;
+}
+
+.fa-angle-down {
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    font-size: 50pt;
+    color: var(--primairy-color);
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transition-duration: .3s;
+    background-color: var(--light-color);
+    border-radius: 50%;
+}
+
+.fa-angle-down:hover {
+    color: var(--light-color);
+    background-color: var(--primairy-color);
+    transition-duration: .3s;
+}
