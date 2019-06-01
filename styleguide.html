@@ -1,21 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Styleguide</title>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/styleguide.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styldeguide.css">
+    <title>Elegance - Styleguide</title>
+
 </head>
+
 <body>
-<div class="container">
-    <h1 class="sg-title">Digital styleguide</h1>
-    <h2 class="sg-subtitle">Kleuren</h2>
-    <h2 class="sg-subtitle">Typografie</h2>
-    <h2 class="sg-subtitle">Knopppen</h2>
-    <h2 class="sg-subtitle">Formulier</h2>
-    <h2 class="sg-subtitle">Componenten</h2>
-</div>
+    <div class="container">
+        <h1 class="sg-title">Digital styleguide</h1>
+        <h2 class="box sg-subtitle">Kleuren</h2>
+        <div id="colors">
+            <div class="color dark">Dark Color</div>
+            <div class="color light">Light Color</div>
+            <div class="color grey">Gray Color</div>
+            <div class="color primairy">Primairy Color</div>
+            <div class="color comp">Complementairy Color</div>
+        </div>
+        <h2 class="box sg-subtitle">Typografie</h2>
+        <div id="typo">
+            <section class="section section-light">
+                <h2>Title</h2>
+            </section>
+            <h2>of</h2>
+            <section class="section section-dark">
+                <h2>Title</h2>
+            </section>
+            <h3>Subtitle</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel doloribus, molestias facere
+                    delectus
+                    tenetur ratione possimus sint quod. Cum delectus cumque aliquid ea amet nostrum ad recusandae ex id.
+                </p>
+                <h3>Slideshow text:</h3>
+                <p class="text">Lorem ipsum dolor sit amet</p>
+        </div>
+        <h2 class="box sg-subtitle">Knoppen</h2>
+        <div id="knoppen">
+            <div>
+                <button id="buttonTop"><i class="fas fa-angle-up"></i></button>
+                <a href="#" id="buttonDown"><i class="fas fa-angle-down"></i></a>
+            </div>
+            <div>
+                <input class="reserveren" id="button" type="submit" value="Verstuur">
+            </div>
+            <div>
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>
+            </div>
+            <div>
+                <input class="contact contactButton" type="submit" value="Verstuur">
+            </div>
+            <div id="nieuwsbrief">
+                <input type="submit" value="Abonneer">
+            </div>
+        </div>
+        <h2 class="box sg-subtitle">Formulier</h2>
+        <div class="forms">
+            <div class="form1">
+                <form name="reserveren" onsubmit="return validateForm()">
+                    <input class="reserveren" type="text" placeholder="Naam" name="naam" minlength="2">
+                    <input class="reserveren" type="number" placeholder="Aantal personen (max 16)" max="16" min="1"
+                        name="hoeveel">
+                    <input class="reserveren" id="date" type="date" placeholder="Datum">
+                    <input class="reserveren" id="button" type="submit" value="Verstuur">
+                </form>
+            </div>
+            <div class="form2">
+                <form name="contact" id="contactForm">
+                    <label class="contactLabel" for="name">Naam:</label>
+                    <input class="contact" type="text" name="name" required>
+
+                    <label class="contactLabel" for="email">Email:</label>
+                    <input class="contact" type="email" name="email" id="email" required>
+
+                    <label class="contactLabel" for="vraag">Uw vraag/opmerking:</label>
+                    <textarea class="contact textarea" name="vraag" id="contactVraag" cols="30" rows="10"
+                        required></textarea>
+
+                    <input class="contact contactButton" type="submit" value="Verstuur">
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
-</html>
