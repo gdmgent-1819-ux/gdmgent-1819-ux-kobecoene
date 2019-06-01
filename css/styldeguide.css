@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
+@import url(variables.css);
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+#colors {
+    display: flex;
+}
+
+.color {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    /* background: blue; */
+    border: solid 3px var(--primairy-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dark {
+    background-color: var(--dark-color);
+    color: white;
+}
+
+.light {
+    background-color: var(--light-color);
+}
+
+.grey {
+    background-color: var(--gray-color);
+    color: white;
+}
+
+.primairy {
+    background-color: var(--primairy-color);
+    color: white;
+}
+
+.comp {
+    background-color: var(--complementair-color);
+    color: white;
+}
+
+.section {
+    text-align: center;
+    padding: 50px;
+    max-height: 100px;
+}
+
+.section-light {
+    background-color: var(--light-color);
+    color: var(--gray-color);
+}
+
+.section-dark {
+    background-color: var(--dark-color);
+    color: #ddd;
+}
+
+section h2 {
+    font-size: 4.3rem;
+    font-family: 'Rochester', cursive;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 20pt;
+    color: var(--light-color);
+    letter-spacing: normal;
+    font-family: 'Charm', cursive;
+    font-weight: 200;
+    background-color: var(--dark-color);
+    padding: 10px;
+    width: 100px;
+}
+
+.text {
+    color: var(--dark-color);
+    font-size: 15pt;
+    font-family: 'Charm', cursive;
+}
+
+#buttonTop {
+    color: var(--primairy-color);
+    background-color: var(--light-color);
+    font-size: 30pt;
+    border: none;
+    background-color: none;
+    outline: none;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition-duration: .3s;
+}
+
+#buttonTop:hover {
+    background-color: var(--primairy-color);
+    color: var(--light-color);
+    transition-duration: .3s;
+}
+
+.fa-angle-down {
+    width: 60px;
+    height: 60px;
+    font-size: 50pt;
+    color: var(--primairy-color);
+    text-align: center;
+    transition-duration: .3s;
+    background-color: var(--light-color);
+    border-radius: 50%;
+}
+
+.fa-angle-down:hover {
+    color: var(--light-color);
+    background-color: var(--primairy-color);
+    transition-duration: .3s;
+}
+
+.reserveren {
+    display: block;
+    width: 400px;
+    height: 50px;
+    padding-left: 20px;
+    margin: 10px 0;
+    transition-duration: .3s;
+    border-radius: 3px;
+    border: none;
+}
+
+.reserveren:hover {
+    box-shadow: none;
+    transition-duration: .3s;
+}
+
+.reserveren:focus {
+    background-color: var(--primairy-color);
+    color: white;
+    outline: none;
+}
+
+#button {
+    width: 400px;
+    background-color: var(--primairy-color);
+    transition-duration: .3s;
+}
+
+#button:hover {
+    color: var(--primairy-color);
+    background-color: var(--light-color);
+    transition-duration: .3s;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+#button:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    width: auto;
+    padding: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    border-radius: 3px 0 0 3px;
+    left: 0;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: var(--primairy-color);
+    color: var(--light-color);
+    border: none;
+    text-decoration: none;
+    opacity: .9;
+}
+
+.reserveren {
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 13pt;
+    font-weight: 300;
+}
+
+.reserveren::placeholder {
+    color: var(--primairy-color);
+    font-family: 'Tenor Sans', sans-serif;
+    font-size: 13pt;
+}
+
+.contact {
+    display: block;
+    border-top: none;
+    min-width: 410px;
+    max-width: 410px;
+    min-height: 30px;
+    max-height: 300px;
+    padding-left: 20px;
+    border-radius: 2px;
+}
+
+.contactButton {
+    margin: 20px 0;
+    background-color: var(--light-color);
+    padding: 5px;
+    transition-duration: .3s;
+    font-family: 'Charm', cursive;
+    border: none;
+}
+
+.contactButton:hover {
+    background-color: var(--primairy-color);
+    color: var(--light-color);
+    transition-duration: .3s;
+    cursor: pointer;
+}
+
+.contact:focus {
+    border: solid 1.5px var(--dark-color);
+    outline: none;
+    border-radius: 2px;
+}
+
+#nieuwsbrief input[type="submit"] {
+    background: #f4511e;
+    border: 0;
+    width: 350px;
+    padding: 6px 0;
+    text-align: center;
+    color: var(--light-color);
+    transition-duration: .3s;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#contactForm {
+    color: white;
+    border: none;
+    outline: none;
+    border: solid 15px var(--dark-color);
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    background-color: var(--dark-color);
+    opacity: .8;
+}
+
+.contactButton {
+    color: var(--primairy-color);
+    font-family: 'Charm', cursive;
+    font-size: 15pt;
+    width: 350px;
+}
